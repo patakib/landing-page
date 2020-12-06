@@ -16,14 +16,14 @@
         </div>
         <nav id="nav-bar">
           <ul>
-            <li><a href="#" class="nav-link">Menu 1</a></li>
-            <li><a href="#" class="nav-link">Menu 2</a></li>
-            <li><a href="#" class="nav-link">Menu 3</a></li>
+            <li><a href="#container" class="nav-link">Home</a></li>
+            <li><a href="#features" class="nav-link">Features</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
           </ul>
         </nav>
       </header>
-      <main>
-        <h1>Forestry Investments</h1>
+      <main id="main">
+        <h1 id="title">Forestry Investments</h1>
         <section id="features">
           <div class="feature-class">
             <p>Continuous, Computable Growth</p>
@@ -34,7 +34,7 @@
           <div class="feature-class">
             <p>1000+ Satisfied Investors</p>
           </div>
-          <div class="feature-class">
+          <div class="feature-class" id="video-text">
           <p>A brief overview on Forestry Investments:</p>
           <iframe id="video" src="https://youtube.com/embed/Ij7b3FsBPTg" width="600" height="400"></iframe>
           </div>
@@ -65,9 +65,10 @@
           </div>
         </section>
         <section>
-            <form class="subscribe">
-              <input type="email" name="email" value="email">
-              <button type="button" name="Subscribe">Subscribe</button>
+            <form id="form" action="https://www.freecodecamp.org/email-submit">
+              <label for="email">Would you like to get more information?</label><br>
+              <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+              <input type="submit" id="submit" name="submit">
             </form>
         </section>
       </main>
